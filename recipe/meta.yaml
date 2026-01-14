@@ -43,7 +43,8 @@ requirements:
     - conmon >=2.0.30
     - containers-common
     - cni-plugins
-    - crun
+    # TODO: switch to crun?
+    - runc
     - slirp4netns
     - netavark
 
