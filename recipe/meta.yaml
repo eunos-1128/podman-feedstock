@@ -64,9 +64,8 @@ test:
     #       terminates before reading the file (if built rootless in container).
     - |
       # Check architecture; skip on aarch64 or ppc64le due to clone syscall issues
-      arch=$(uname -m)
-      if [[ "$arch" == "aarch64" || "$arch" == "ppc64le" ]]; then
-        echo "Skipping podman info test on $arch due to known clone syscall issues in rootless mode."
+      if [[ "${target_platform}" == "linux-aarch64" || "${target_platform}" == "linux-ppc64le" ]]; then
+        echo "Skipping podman info test on ${target_platform} due to known clone syscall issues in rootless mode."
         exit 0
       fi
 
