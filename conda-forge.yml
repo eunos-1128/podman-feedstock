@@ -1,13 +1,4 @@
-provider:
-  linux_aarch64: azure
-  linux_ppc64le: azure
-
 conda_forge_output_validation: true
-
-# os_version:
-#   linux_64: cos7
-#   linux_aarch64: cos7
-#   linux_ppc64le: cos7
 
 # https://conda-forge.org/docs/maintainer/conda_forge_yml.html#azure
 azure:
@@ -26,4 +17,7 @@ conda_build:
   pkg_format: '2'
 bot:
   automerge: true
+provider:
+  linux_aarch64: default
+  linux_ppc64le: default
 test: native_and_emulated
