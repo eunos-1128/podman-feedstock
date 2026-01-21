@@ -18,6 +18,6 @@ conda_build:
 bot:
   automerge: true
 provider:
-  linux_aarch64: default
-  linux_ppc64le: default
+  linux_aarch64: linux_aarch64
+  linux_ppc64le: linux_ppc64le
 test: native_and_emulated
