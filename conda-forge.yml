@@ -17,7 +17,7 @@ conda_build:
   pkg_format: '2'
 bot:
   automerge: true
-provider:
-  linux_aarch64: azure
-  linux_ppc64le: azure
-test: native
+build_platform:
+  linux_aarch64: linux_64
+  linux_ppc64le: linux_64
+test: native_and_emulated
