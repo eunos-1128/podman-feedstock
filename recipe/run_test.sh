@@ -2,6 +2,9 @@
 
 set -exo pipefail
 
+podman --help
+podman --version
+
 # We cannot really test podman's functionality here because we'd need to
 # run it as root and/or in a build container with more capabilities.
 # Instead let's at least see if it read the config from containers-common.
